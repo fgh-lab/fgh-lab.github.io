@@ -7,9 +7,9 @@ import DefaultLayout from '@/layouts/default';
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <div className="fixed top-0 left-0 bottom-0 overflow-hidden z-[-1] w-full min-h-[900px] brightness-150">
+      <div className="fixed top-0 left-0 bottom-0 flex justify-center overflow-hidden z-[-1] w-full brightness-150">
         <LightRays
-          className="custom-rays"
+          className="min-w-[1000px] min-h-[900px]"
           distortion={0.03}
           followMouse={true}
           lightSpread={0.4}
@@ -45,8 +45,10 @@ export default function IndexPage() {
           </span>
         </div>
 
-        <div className="text-xs font-light text-gray-400 tracking-widest uppercase px-4 py-2 border border-gray-200/20 rounded-full bg-white/5">
-          ✨ Something awesome is coming soon ✨
+        <div className="flex items-center gap-1 text-xs font-light text-center text-gray-400 tracking-widest uppercase px-4 py-2 border border-gray-200/20 rounded-full bg-white/5">
+          ✨
+          <span className="text-center">Something awesome is coming soon</span>
+          ✨
         </div>
       </motion.section>
     </DefaultLayout>
